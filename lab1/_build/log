@@ -1,7 +1,17 @@
-# dune init proj lab1
+# dune exec lab1
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location:
 # C:\Users\jorda\AppData\Local\Microsoft\Windows\INetCache\dune\db
 # Workspace root: "C:\\Users\\jorda\\Desktop\\Lab01\\lab1"
 # Auto-detected concurrency: 16
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ C:\Users\jorda\AppData\Local\opam\default\bin\ocamlc.opt.exe -config > C:\Users\jorda\AppData\Local\Temp\dune_aab762_output
