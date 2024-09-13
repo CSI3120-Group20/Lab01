@@ -1,6 +1,6 @@
 # Lab 1
 
-To execute:
+To create executable:
 ```
 $ opam exec -- dune build
 ```
