@@ -10,3 +10,9 @@ filter_even
 (* Question 3: compose_functions *)
 
 (* Question 4: reduce *)
+let rec reduce f acc lst = 
+  match lst with
+  | [] -> acc
+  | h :: t -> (f h (reduce f acc t));;
+
+reduce
