@@ -1,9 +1,10 @@
 (* Question 1: map2 *)
 
 (* Question 2: filter_even *)
-
-(* This function from OCaml Documentation > Learn > Language > Lists *)
-let filter_even l = List.filter (fun x -> x mod 2 = 0) l ;;
+let rec filter_even l = 
+  match l with
+  | [] -> []
+  | h :: t -> (if h mod 2 = 0 then [h] else []) @ (filter_even t);;
 
 filter_even
 (* Question 3: compose_functions *)
