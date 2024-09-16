@@ -12,9 +12,9 @@ then:
 ```
 #use "main.ml";;
 map2
-filter_even [1;3;64;34;33;-3;0];;
+filter_even [1; 2; 3; 4; 5; 6];;
 compose_functions
-reduce
+reduce (fun x y -> x*y) 2 [1;2;3;4];; 
 ```
 
 Limited help (ie. understanding error messages) from ChatGPT may have been applied throughout the development of our solutions. Solutions have not been copy + pasted.
