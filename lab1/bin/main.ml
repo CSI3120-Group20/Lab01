@@ -1,4 +1,5 @@
 (* Question 1: map2 *)
+let filter_even l = List.filter (fun x -> x mod 2 = 0) l ;;
 
 (* Question 2: filter_even *)
 
