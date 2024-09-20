@@ -20,18 +20,9 @@ filter_even
 
 (* Question 4: reduce *)
 
-(* Main recursive function *)
-let rec reduce_rec f lst = 
+let rec reduce f acc lst =
   match lst with
-    | [] -> 0
-    | [x] -> x
-    | h :: t -> (f h (reduce_rec f t));;
-
-(* Initial function to ensure that acc is added at the beginning, then forgotten about *)
-let reduce f acc lst = 
-  match lst with
-    | [] -> 0
-    | [x] -> x
-    | _ :: _ -> (f acc (reduce_rec f lst));;
+    | [] -> acc
+    | h :: t -> (reduce f (f acc h) t);;
 
 reduce
