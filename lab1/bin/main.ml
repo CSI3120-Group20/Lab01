@@ -16,7 +16,21 @@ let rec filter_even l =
     | h :: t -> (if h mod 2 = 0 then [h] else []) @ (filter_even t);;
 
 filter_even
+
+
 (* Question 3: compose_functions *)
+
+(*  
+    `f`: function f
+    `g`: function g
+    `x`: input x
+*)
+let compose_functions f g x = 
+    f (g x);;
+
+(* call compose_functions *)
+compose_functions
+
 
 (* Question 4: reduce *)
 
