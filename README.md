@@ -1,11 +1,5 @@
 # Lab 1
 
-To create executable:
-```$ dune build```
-
-To launch the executable:
-```$ dune exec lab1```
-
 To run in the OCaml repl (ensure you are in the ```Lab01\lab1\bin``` directory):
 ```opam exec -- ocaml```
 then: 
