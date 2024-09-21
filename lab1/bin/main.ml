@@ -9,7 +9,7 @@ let rec map2 f x y =
       | (x::xt,y::yt) -> (f x y) :: (map2 f xt yt);; (*Apply function to both lists*)
    
 (* call map2 *)
-map2
+map2 (fun x y -> x * y)[1;4;6][2;8;10];;
 
 
 (* Question 2: filter_even *)
